@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_C7X4UDjTEeiczrEkLKcA_Q" name="EXPERT" id="_8v1jIDjSEeiczrEkLKcA_Q" label="EXPERT" dataPackage="_C82fADjTEeiczrEkLKcA_Q" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/EXPERT?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="" ServerName="localhost" DatasourceName="" FileFieldName="" SID="EXPERT" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_C7YfYDjTEeiczrEkLKcA_Q" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_C8B_oDjTEeiczrEkLKcA_Q" tag="package filter" value=""/>
+    <taggedValue xmi:id="_C8ItUDjTEeiczrEkLKcA_Q" tag="Status" value=""/>
+    <taggedValue xmi:id="_C8ItUTjTEeiczrEkLKcA_Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_C8ItUjjTEeiczrEkLKcA_Q" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_C8ItUzjTEeiczrEkLKcA_Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_C8ItVDjTEeiczrEkLKcA_Q" tag="Author" value=""/>
+    <taggedValue xmi:id="_C8ItVTjTEeiczrEkLKcA_Q" tag="otherParameter"/>
+    <taggedValue xmi:id="_C8kLIDjTEeiczrEkLKcA_Q" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_C8kLITjTEeiczrEkLKcA_Q" tag="DB ProductVersion" value="5.6.17"/>
+    <taggedValue xmi:id="_C8kLIjjTEeiczrEkLKcA_Q" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_C7YfYTjTEeiczrEkLKcA_Q" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_C82fADjTEeiczrEkLKcA_Q" name="EXPERT" dataManager="_C7X4UDjTEeiczrEkLKcA_Q">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_ig-NEDjTEeiczrEkLKcA_Q" name="adresse" id="_igfr8DjTEeiczrEkLKcA_Q" comment="enregistre les réponses des WS fibres et les adresses" label="adresse" tableType="TABLE">
+      <taggedValue xmi:id="_ig-NETjTEeiczrEkLKcA_Q" tag="Comment" value="enregistre les réponses des WS fibres et les adresses"/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NEjjTEeiczrEkLKcA_Q" name="adresseId" comment="id" label="adresseId" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <taggedValue xmi:id="_ig-NEzjTEeiczrEkLKcA_Q" tag="Comment" value="id"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NFDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NFTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NFjjTEeiczrEkLKcA_Q" name="adressePostal" comment="adresse sous forme de chaine de caractere tel qu'on peut la voie au format postal" label="adressePostal" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_ig-NFzjTEeiczrEkLKcA_Q" tag="Comment" value="adresse sous forme de chaine de caractere tel qu'on peut la voie au format postal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NGDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NGTjTEeiczrEkLKcA_Q" name="TEXT" numericPrecisionRadix="10" javaDataType="-1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NGjjTEeiczrEkLKcA_Q" name="insee" comment="code insee" label="insee" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-NGzjTEeiczrEkLKcA_Q" tag="Comment" value="code insee"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NHDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NHTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NHjjTEeiczrEkLKcA_Q" name="rivoliFantoir" comment="code rivoli issu de la base fantoir" label="rivoliFantoir" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-NHzjTEeiczrEkLKcA_Q" tag="Comment" value="code rivoli issu de la base fantoir"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NIDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NITjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NIjjTEeiczrEkLKcA_Q" name="rivoliNumericable" comment="code rivoli chez Numericable" label="rivoliNumericable" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-NIzjTEeiczrEkLKcA_Q" tag="Comment" value="code rivoli chez Numericable"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NJDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NJTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NJjjTEeiczrEkLKcA_Q" name="numeroVoie" comment="numero de la rue (1,2,10,1000...)" label="numeroVoie" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-NJzjTEeiczrEkLKcA_Q" tag="Comment" value="numero de la rue (1,2,10,1000...)"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NKDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NKTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NKjjTEeiczrEkLKcA_Q" name="complementNumeroVoie" comment="BIS,TER,QUAT,A,B...." label="complementNumeroVoie" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-NKzjTEeiczrEkLKcA_Q" tag="Comment" value="BIS,TER,QUAT,A,B...."/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NLDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NLTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NLjjTEeiczrEkLKcA_Q" name="priseNumericable" comment="numero de prise Numericable pour cette adresse" label="priseNumericable" length="6" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-NLzjTEeiczrEkLKcA_Q" tag="Comment" value="numero de prise Numericable pour cette adresse"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NMDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NMTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NMjjTEeiczrEkLKcA_Q" name="typeLogementNumericable" comment="type de logement (voie doc Numericable)" label="typeLogementNumericable" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-NMzjTEeiczrEkLKcA_Q" tag="Comment" value="type de logement (voie doc Numericable)"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-NNDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-NNTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-NNjjTEeiczrEkLKcA_Q" name="raccordabiliteNumericable" comment="raccordabilité (voie doc Numericable)" label="raccordabiliteNumericable" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-NNzjTEeiczrEkLKcA_Q" tag="Comment" value="raccordabilité (voie doc Numericable)"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0IDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0ITjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0IjjTEeiczrEkLKcA_Q" name="positionnementPBNumericable" comment="positionnementPB (voie doc Numericable)" label="positionnementPBNumericable" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0IzjTEeiczrEkLKcA_Q" tag="Comment" value="positionnementPB (voie doc Numericable)"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0JDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0JTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0JjjTEeiczrEkLKcA_Q" name="netNumericable" comment="eligibilite à la fibre chez Numéricable" label="netNumericable" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0JzjTEeiczrEkLKcA_Q" tag="Comment" value="eligibilite à la fibre chez Numéricable"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0KDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0KTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0KjjTEeiczrEkLKcA_Q" name="voipNumericable" comment="eligibilite a la voip pour Numericable" label="voipNumericable" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0KzjTEeiczrEkLKcA_Q" tag="Comment" value="eligibilite a la voip pour Numericable"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0LDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0LTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0LjjTEeiczrEkLKcA_Q" name="tvNumericable" comment="type de tv proposé ou &quot;no&quot; si indisponible" label="tvNumericable" length="11" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0LzjTEeiczrEkLKcA_Q" tag="Comment" value="type de tv proposé ou &quot;no&quot; si indisponible"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0MDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0MTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0MjjTEeiczrEkLKcA_Q" name="debitNumericable" comment="debit proposé par Numéricable ou 0 si pas de net" label="debitNumericable" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0MzjTEeiczrEkLKcA_Q" tag="Comment" value="debit proposé par Numéricable ou 0 si pas de net"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0NDjTEeiczrEkLKcA_Q" body="-1" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0NTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0NjjTEeiczrEkLKcA_Q" name="netDarty" comment="eligibilite à la fibre chez Dartybox" label="netDarty" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0NzjTEeiczrEkLKcA_Q" tag="Comment" value="eligibilite à la fibre chez Dartybox"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0ODjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0OTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0OjjTEeiczrEkLKcA_Q" name="voipDarty" label="voipDarty" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0OzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0PDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0PTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0PjjTEeiczrEkLKcA_Q" name="tvDarty" label="tvDarty" length="11" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0PzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0QDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0QTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0QjjTEeiczrEkLKcA_Q" name="debitDarty" label="debitDarty" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0QzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0RDjTEeiczrEkLKcA_Q" body="-1" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0RTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0RjjTEeiczrEkLKcA_Q" name="avisGlobalOrange" comment="1=eligible 2=precommande 3=prise d'interet 4=non eligible" label="avisGlobalOrange" length="10" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0RzjTEeiczrEkLKcA_Q" tag="Comment" value="1=eligible 2=precommande 3=prise d'interet 4=non eligible"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0SDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0STjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0SjjTEeiczrEkLKcA_Q" name="codeStatutZoneOrange" label="codeStatutZoneOrange" length="10" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0SzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0TDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0TTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0TjjTEeiczrEkLKcA_Q" name="codeStatutSyndicOrange" label="codeStatutSyndicOrange" length="10" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0TzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0UDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0UTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0UjjTEeiczrEkLKcA_Q" name="codeStatutRccImmeubleOrange" label="codeStatutRccImmeubleOrange" length="10" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0UzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0VDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0VTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0VjjTEeiczrEkLKcA_Q" name="datePrevPEOrange" label="datePrevPEOrange" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-0VzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0WDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0WTjTEeiczrEkLKcA_Q" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0WjjTEeiczrEkLKcA_Q" name="datePrevPBOrange" label="datePrevPBOrange" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-0WzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0XDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0XTjTEeiczrEkLKcA_Q" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0XjjTEeiczrEkLKcA_Q" name="dateReelPBOrange" label="dateReelPBOrange" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-0XzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0YDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0YTjTEeiczrEkLKcA_Q" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0YjjTEeiczrEkLKcA_Q" name="dateMescFT" comment="date de commercialisation fibre par orange" label="dateMescFT" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-0YzjTEeiczrEkLKcA_Q" tag="Comment" value="date de commercialisation fibre par orange"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0ZDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0ZTjTEeiczrEkLKcA_Q" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ZjjTEeiczrEkLKcA_Q" name="dateMescArcep" comment="date de commercialisation fibre ouvert aux autres FAIs" label="dateMescArcep" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-0ZzjTEeiczrEkLKcA_Q" tag="Comment" value="date de commercialisation fibre ouvert aux autres FAIs"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0aDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0aTjTEeiczrEkLKcA_Q" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ajjTEeiczrEkLKcA_Q" name="zoneArcep" comment="zone arcep, de 1 a 3" label="zoneArcep" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0azjTEeiczrEkLKcA_Q" tag="Comment" value="zone arcep, de 1 a 3"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0bDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0bTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0bjjTEeiczrEkLKcA_Q" name="typeBlocageOrange" label="typeBlocageOrange" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0bzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0cDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0cTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0cjjTEeiczrEkLKcA_Q" name="dateDeblocageOrange" label="dateDeblocageOrange" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-0czjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0dDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0dTjTEeiczrEkLKcA_Q" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0djjTEeiczrEkLKcA_Q" name="netOrange" label="netOrange" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0dzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0eDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0eTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ejjTEeiczrEkLKcA_Q" name="voipOrange" label="voipOrange" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0ezjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0fDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0fTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0fjjTEeiczrEkLKcA_Q" name="tvOrange" label="tvOrange" length="11" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0fzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0gDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0gTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0gjjTEeiczrEkLKcA_Q" name="debitOrange" label="debitOrange" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0gzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0hDjTEeiczrEkLKcA_Q" body="-1" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0hTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0hjjTEeiczrEkLKcA_Q" name="technoFibreOrange" label="technoFibreOrange" length="5" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0hzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0iDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0iTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ijjTEeiczrEkLKcA_Q" name="netSFR" label="netSFR" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0izjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0jDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0jTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0jjjTEeiczrEkLKcA_Q" name="voipSFR" label="voipSFR" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0jzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0kDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0kTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0kjjTEeiczrEkLKcA_Q" name="tvSFR" label="tvSFR" length="11" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0kzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0lDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0lTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ljjTEeiczrEkLKcA_Q" name="debitSFR" label="debitSFR" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0lzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0mDjTEeiczrEkLKcA_Q" body="-1" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0mTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0mjjTEeiczrEkLKcA_Q" name="technoFibreSFR" label="technoFibreSFR" length="5" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0mzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0nDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0nTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0njjTEeiczrEkLKcA_Q" name="numTelAssocieTestSFR" label="numTelAssocieTestSFR" length="10" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0nzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0oDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0oTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ojjTEeiczrEkLKcA_Q" name="netAltitudeInfra" label="netAltitudeInfra" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0ozjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0pDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0pTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0pjjTEeiczrEkLKcA_Q" name="voipAltitudeInfra" label="voipAltitudeInfra" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0pzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0qDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0qTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0qjjTEeiczrEkLKcA_Q" name="tvAltitudeInfra" label="tvAltitudeInfra" length="11" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0qzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0rDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0rTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0rjjTEeiczrEkLKcA_Q" name="debitAltitudeInfra" label="debitAltitudeInfra" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0rzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0sDjTEeiczrEkLKcA_Q" body="-1" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0sTjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0sjjTEeiczrEkLKcA_Q" name="hexavia" label="hexavia" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0szjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0tDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0tTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0tjjTEeiczrEkLKcA_Q" name="hexacle" label="hexacle" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0tzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0uDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0uTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0ujjTEeiczrEkLKcA_Q" name="cadastre" label="cadastre" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ig-0uzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0vDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0vTjTEeiczrEkLKcA_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0vjjTEeiczrEkLKcA_Q" name="latitude" label="latitude" length="9" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_ig-0vzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0wDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0wTjTEeiczrEkLKcA_Q" name="DECIMAL" numericPrecision="6" numericPrecisionRadix="10" javaDataType="3"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0wjjTEeiczrEkLKcA_Q" name="longitude" label="longitude" length="9" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_ig-0wzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0xDjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0xTjTEeiczrEkLKcA_Q" name="DECIMAL" numericPrecision="6" numericPrecisionRadix="10" javaDataType="3"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0xjjTEeiczrEkLKcA_Q" name="netTutor" label="netTutor" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0xzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0yDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0yTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0yjjTEeiczrEkLKcA_Q" name="netBouygues" label="netBouygues" length="8" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-0yzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-0zDjTEeiczrEkLKcA_Q" body="'unknown'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-0zTjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-0zjjTEeiczrEkLKcA_Q" name="debitBouygues" label="debitBouygues" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-0zzjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-00DjTEeiczrEkLKcA_Q" body="-1" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-00TjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-00jjTEeiczrEkLKcA_Q" name="technoFibreBouygues" label="technoFibreBouygues" length="5" sourceType="ENUM" talendType="id_Object">
+        <taggedValue xmi:id="_ig-00zjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-01DjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-01TjTEeiczrEkLKcA_Q" name="ENUM" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-01jjTEeiczrEkLKcA_Q" name="dateInfos" label="dateInfos" length="19" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ig-01zjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-02DjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-02TjTEeiczrEkLKcA_Q" name="DATETIME" numericPrecisionRadix="10" javaDataType="93"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-02jjTEeiczrEkLKcA_Q" name="nbtests" comment="nombre de tests a cette adresse" label="nbtests" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-02zjTEeiczrEkLKcA_Q" tag="Comment" value="nombre de tests a cette adresse"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-03DjTEeiczrEkLKcA_Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-03TjTEeiczrEkLKcA_Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ig-03jjTEeiczrEkLKcA_Q" name="isGeocodeBano" label="isGeocodeBano" length="1" sourceType="TINYINT" talendType="id_Integer">
+        <taggedValue xmi:id="_ig-03zjTEeiczrEkLKcA_Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ig-04DjTEeiczrEkLKcA_Q" body="0" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ig-04TjTEeiczrEkLKcA_Q" name="BIT" numericPrecisionRadix="10" javaDataType="-7"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
