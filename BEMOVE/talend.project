@@ -152,7 +152,6 @@
     <migrationTask xmi:id="_XcWM62JVEeiit9hD-lB8eA" id="org.talend.designer.mapper.migration.TMapSaveToEmfMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XcWM7GJVEeiit9hD-lB8eA" id="org.talend.designer.dbmap.migration.ELTMapSaveToEmfMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XcWM7WJVEeiit9hD-lB8eA" id="org.talend.designer.xmlmap.migration.TXMLMapChangeAllInOneValueMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
-    <migrationTask xmi:id="_XcWM7mJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.FixProjectResourceLink" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XcWM72JVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.ResetValuetInfiniteLoop" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XcWM8GJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.UpgrateDatabaseTypeForSybaseConnection" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XcWM8WJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.RenamePasswordParaForLdapMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
@@ -366,6 +365,7 @@
     <migrationTask xmi:id="_XcWzsGJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.ChangeJobsettingDBversionForMssqlMigrationTask" breaks="6.3.0" version="6.3.1" status="noimpact"/>
     <migrationTask xmi:id="_XcWzsWJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.ChangeTMatchGroupOutputConnectorTask" breaks="6.4.0" version="6.4.1" status="noimpact"/>
     <migrationTask xmi:id="_XcWzsmJVEeiit9hD-lB8eA" id="org.talend.datacleansing.core.migration.UpdateTmatchGroupComputeGrpQualityParamTask" breaks="7.0.1" version="6.5.1" status="noimpact"/>
+    <migrationTask xmi:id="_XcWM7mJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.FixProjectResourceLink" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XcWzs2JVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_WdbGMmJVEeiit9hD-lB8eA" login="pierregrimaud1@bemove.com" firstName="PIERRE" lastName="GRIMAUD" type="DQ"/>
