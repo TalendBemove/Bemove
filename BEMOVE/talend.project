@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_WdbGMWJVEeiit9hD-lB8eA" label="Bemove" description="Projet Bemove" language="java" technicalLabel="BEMOVE" author="_WdbGMmJVEeiit9hD-lB8eA" productVersion="Talend Integration Cloud Hybrid Edition-6.5.1.20180116_1512" url="{&quot;location&quot;:&quot;https://github.com/TalendBemove/Bemove&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
+    <technicalStatus xmi:id="_XGRO4GJVEeiit9hD-lB8eA" label="development" code="DEV"/>
+    <technicalStatus xmi:id="_XGRO4WJVEeiit9hD-lB8eA" label="testing" code="TEST"/>
+    <technicalStatus xmi:id="_XGRO4mJVEeiit9hD-lB8eA" label="production" code="PROD"/>
+    <documentationStatus xmi:id="_XGOLkGJVEeiit9hD-lB8eA" label="unchecked" code="UCK"/>
+    <documentationStatus xmi:id="_XGOLkWJVEeiit9hD-lB8eA" label="checked" code="CHK"/>
+    <documentationStatus xmi:id="_XGOLkmJVEeiit9hD-lB8eA" label="validated" code="VAL"/>
     <migrationTask xmi:id="_XFtOMGJVEeiit9hD-lB8eA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XFtOMWJVEeiit9hD-lB8eA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_XFtOMmJVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
