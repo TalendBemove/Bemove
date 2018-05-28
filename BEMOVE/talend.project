@@ -369,4 +369,5 @@
     <migrationTask xmi:id="_XcWzs2JVEeiit9hD-lB8eA" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_WdbGMmJVEeiit9hD-lB8eA" login="pierregrimaud1@bemove.com" firstName="PIERRE" lastName="GRIMAUD" type="DQ"/>
+  <TalendProperties:User xmi:id="_6sXSsGJXEeidhLwEGyOSAQ" login="jm.barbin@bemove.com" firstName="Jean-michel" lastName="BARBIN" type="DQ"/>
 </xmi:XMI>
